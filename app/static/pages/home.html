@@ -1,0 +1,21 @@
+
+<rg-breadcrumb></rg-breadcrumb>
+<div ng-if="ic.trainning==false ? true : false" class="textCenter">
+    <img src='/static/img/loading_trainning.gif' class="loadingTrainning">
+    <img src='/static/img/loading_trainning.gif' ng-if="false">
+</div>
+<form ng-submit="ic.search()">
+    <label>User Search</label><br/>
+    <input class="inputSearchSize" ng-disabled="ic.trainning==false" type="number" name="id" id="id" ng-model="ic.user.id" placeholder=" Insert ID">
+    <button class="btn btn-danger" ng-disabled="ic.trainning==false" type="submit"><i class="glyphicon glyphicon-search"></i> Search</button>
+    <h3 ng-show="ic.message!=undefined">{{ic.message}}</h3>
+</form>
+<button class="btn btn-success sizeButton" ng-disabled="ic.trainning==false" ng-click="ic.register()"><i class="glyphicon glyphicon-plus"></i><i class="glyphicon glyphicon-user"></i><br/>Create User</button>
+<button class="btn btn-warning sizeButton" ng-disabled="ic.trainning==false" ng-click="ic.trainningMethod()"><i class="glyphicon glyphicon-save-file"></i><br/>Trainning Yml</button>
+<button class="btn btn-primary sizeButton" ng-disabled="ic.trainning==false" ng-click="ic.recognition()"><i class="glyphicon glyphicon-eye-open"></i><br/>Recognition</button>
+<button class="btn btn-secondary sizeButton" ng-disabled="ic.trainning==false" ng-click="ic.camConfig()"><i class="glyphicon glyphicon-camera"></i> <i class="glyphicon glyphicon-cog"></i><br/>Cam Config</button>
+
+<!--<div ng-show="userLoad!=undefined">{{userLoad.id}} - {{userLoad.name}}</div>-->
+<!--<div ng-repeat="face in faces">-->
+    <!--<img src="{{face.src}}">-->
+<!--</div>-->

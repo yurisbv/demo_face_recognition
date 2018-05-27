@@ -1,0 +1,7 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page" ng-if="titlepage==undefined"><i class="glyphicon glyphicon-home fontSize2Rem"></i> Home</li>
+        <li class="breadcrumb-item" ng-if="titlepage!=undefined"><a href="#" ng-click="stopCam()"><i class="glyphicon glyphicon-home fontSize2Rem"></i> Home</a></li>
+        <li class="breadcrumb-item" aria-current="page" ng-if="titlepage!=undefined">{{titlepage}}</li>
+    </ol>
+</nav>

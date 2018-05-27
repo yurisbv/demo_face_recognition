@@ -1,0 +1,7 @@
+<rg-breadcrumb titlepage="Recognizer"></rg-breadcrumb>
+<h1>Recognizer</h1>
+<button ng-click="rc.startRecognizer()" class="btn btn-success sizeButtonUser" ng-if="rc.activeRecognizer==undefined ? true : false"><i class="glyphicon glyphicon-play-circle"></i><br/><span class="fontSize2Rem">Start</span></button>
+<button ng-click="rc.stopRecognizer()"class="btn btn-success sizeButtonUser" ng-if="rc.activeRecognizer==true ? true : false"><i class="glyphicon glyphicon-stop"></i><br/><span class="fontSize2Rem">Stop</span></button>
+<img id="rg" ng-src="{{rc.activeRecognizer==true ? 'video_recog' : rc.activeRecognizer==undefined ? '/static/img/stop.png' : '/static/img/loading.gif'}}" class="marginBottom1p5">
+<img src='/static/img/loading.gif' ng-if="false">
+<div class="marginBottom1p5"></div>

@@ -1,0 +1,131 @@
+body{
+	background-color: black;
+}
+
+header{
+	background-color: white;
+}
+
+a:link{
+	text-decoration:none;
+}
+
+footer{
+	background-color: white;
+	text-align: center;
+}
+
+#bg, #rg{
+	width:100%; 
+	height:100%; 
+	background-color:#0a2a4a;
+}
+
+#main{
+	background-color: white;
+	min-height: 800px;
+}
+
+
+.programTittle{
+	font-size: 7rem;
+	text-align: center;
+	color: white;
+}
+
+.divPhotos{
+	background-color:white; 
+	overflow:auto;
+	margin-bottom: 1.5%;
+}
+
+.divImage{
+	width:25%; 
+	float:left;
+}
+
+.photo{
+	width:88%; 
+	margin-left:6%; 
+	margin-right:6%; 
+	margin-bottom:15px;
+}
+
+.marginBottom1p5{
+	margin-bottom: 1.5%;
+}
+
+.padding0{
+	padding: 0 !important;
+
+}
+.paddingContainer{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.sizeButton{
+	width: 49.8%;
+    height: 40%;
+    margin-bottom: 0.5%;
+    font-size: 4rem;
+}
+
+.inputSearchSize{
+	width:90.5% !important;
+	margin-right: 1%;
+}
+
+.marginTop2{
+	margin-top: 2% !important;
+}
+
+.backgroundColorBlak{
+	background-color: black !important;
+}
+
+.btn-success{
+	background-color: #003366 !important;
+}
+
+.btn-warning{
+	background-color: #336699 !important;
+	color: white;
+}
+
+.btn-warning:hover{
+	color: white;
+}
+
+.btn-danger{
+	background-color: #4175ab !important;
+	border:0;
+}
+
+.btn-primary{
+	background-color: #003399 !important;
+}
+
+.btn-secondary{
+	background-color: #6699ff !important;
+	color: white !important;
+}
+
+.fontSize2Rem{
+	font-size: 2rem !important;
+}
+
+.sizeButtonUser{
+	width: 12%;
+    height: 8%;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.loadingTrainning{
+	width: 10%
+}
+
+.textCenter{
+	text-align: center;
+}

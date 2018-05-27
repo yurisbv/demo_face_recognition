@@ -1,0 +1,26 @@
+<div>
+    <rg-breadcrumb titlepage="Create User" ng-show="uc.user.id==undefined"></rg-breadcrumb>
+    <rg-breadcrumb titlepage="Edit User" ng-show="uc.user.id!=undefined"></rg-breadcrumb>
+    <h1 ng-show="uc.user.id==undefined">Create User</h1>
+    <h1 ng-show="uc.user.id!=undefined">Edit User</h1>
+    <form method="post">
+      <div class="form-group">
+          <label for="name">Username:</label>
+          <input type="text" class="form-control" name="name" id="name" ng-model="uc.user.name">
+          <button ng-if="uc.user.name!=undefined &amp;&amp; uc.user.name!=''" ng-click="uc.startVideo()" class="btn btn-success sizeButtonUser"><i class="glyphicon glyphicon-play-circle"></i><br/><span class="fontSize2Rem">Play</span></button>
+          <button ng-if="uc.activeVideo==true" ng-click="uc.addImage()" class="btn btn-success sizeButtonUser fontSize2Rem"><i class="glyphicon glyphicon-plus"></i> <i class="glyphicon glyphicon-picture"></i><br/><span class="fontSize2Rem">Add Img</span></button>
+          <button ng-if="imageFaces.length>0" ng-click="uc.removeImage()" class="btn btn-success sizeButtonUser fontSize2Rem"><i class="glyphicon glyphicon-minus"></i> <i class="glyphicon glyphicon-picture"></i><br/><span class="fontSize2Rem">Remove Img</span></button>
+          <button ng-if="imageFaces.length>0" ng-click="uc.submit()" class="btn btn-success sizeButtonUser"><i class="glyphicon glyphicon-floppy-disk"></i><br/><span class="fontSize2Rem">Save</span></button>
+          <button ng-if="uc.user.id!=undefined" ng-click="uc.deleteUser()" class="btn btn-success sizeButtonUser"><i class="glyphicon glyphicon-trash"></i><br/><span class="fontSize2Rem">Delete</span></button>
+          <br/>
+          <img id="bg" ng-src="{{uc.activeVideo == true ? 'video_feed' : uc.activeVideo==false ? '/static/img/loading.gif' : '/static/img/stop.png'}}">
+          <img src='/static/img/loading.gif' ng-if="false">
+      </div>
+    </form>
+
+    <div class="divPhotos">
+        <div ng-repeat="image in imageFaces" class="divImage">
+            <img src="{{image.src}}" class="photo">
+        </div>
+    </div>
+</div>

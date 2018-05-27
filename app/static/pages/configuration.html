@@ -1,0 +1,28 @@
+<div>
+    <rg-breadcrumb titlepage="Cam Config"></rg-breadcrumb>
+    <h1>Cam Config</h1>
+    <form method="post" name="droidCamForm" ng-submit="cc.saveCam()">
+        <fieldset class="form-group marginTop2">
+            <legend>Camera Type</legend>
+            <div class="container marginTop2">
+                <label class="form-check-label">
+                    <input class="form-check-input" id="local" name="local" type="radio" ng-model="cc.camera.type" value="local">Local Cam
+                </label>
+            </div>
+            <div class="container marginTop2">
+                <label class="form-check-label">
+                    <input class="form-check-input" id="ipCam" name="ipCam" type="radio" ng-model="cc.camera.type" value="ipCam">DroidCam
+                </label>
+            </div>
+            <div class="marginTop2" ng-show="cc.camera.type=='ipCam'">
+                <label class="form-check-label">
+                    Ip:<input type="text" placeholder="127.0.0.1" name="ip" id="ip" ng-model="cc.camera.ip" ng-required="cc.camera.type=='ipCam' ? true : false" ng-maxlength="15" ng-blur="cc.validatePlaceHolder()">
+                    Port:<input type="text" placeholder="8080" ui-mask="9999" name="port" id="port" ng-model="cc.camera.port" ng-required="cc.camera.type=='ipCam' ? true : false">
+                </label>
+            </div>
+            <div class="marginTop2">
+                <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
