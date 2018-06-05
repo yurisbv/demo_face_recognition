@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+moviepy = "*"
+"Python36" = {path = "C:/Users/jeffe/AppData/Local/Programs/Python/Python36-32/Scripts/opencv_python-3.3.1+contrib-cp36-cp36m-win32.whl"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
