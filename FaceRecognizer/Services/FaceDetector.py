@@ -5,8 +5,6 @@ __version__="1.0"
 __email__="jefferson16luis@hotmail.com / yurisbv@gmail.com"
 
 import cv2
-import os
-import datetime
 import numpy as np
 
 from moviepy.editor import VideoFileClip

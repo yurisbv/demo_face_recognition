@@ -2,11 +2,11 @@
   <head>
     <title>Face Recognition</title>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-    <script src="//code.angularjs.org/1.4.4/angular-route.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    <script src="{{ url_for('static', filename='angularjs.js') }}"></script>
+    <script src="{{ url_for('static', filename='angular-route.js') }}"></script>
+    <script src="{{ url_for('static', filename='ngStorage.min.js') }}"></script>
     <script src="{{ url_for('static', filename='uiMask.js') }}"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-3.3.7.Glyphicons.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="{{ url_for('static', filename='angularjs/main.js') }}"></script>
     <script src="{{ url_for('static', filename='angularjs/configs/routes.js') }}"></script>
